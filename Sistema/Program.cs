@@ -11,7 +11,7 @@ namespace Sistema
         {
             string nombre;
             string nit;
-            string op;
+            char menu = 'n';
             double sub1;
             string pro1;
             double pre1;
@@ -26,27 +26,25 @@ namespace Sistema
 
             sub1 = 0;
 
-            while (Op != n) ;
+            while (menu != 'n') ;
+            {
+                Console.Write("Ingrese nombre del producto: ");
+                pro1 = Console.ReadLine();
 
-            true;
-            Console.Write("Ingrese nombre del producto: ");
-            pro1 = Console.ReadLine();
+                Console.Write("Ingrese precio del producto: ");
+                linea = Console.ReadLine();
+                pre1 = double.Parse(linea);
 
-            Console.Write("Ingrese precio del producto: ");
-            linea = Console.ReadLine();
-            pre1 = double.Parse(linea);
+                Console.Write("Ingrese cantidad del producto: ");
+                linea = Console.ReadLine();
+                cant1 = double.Parse();
 
-            Console.Write("Ingrese cantidad del producto: ");
-            linea = Console.ReadLine();
-            cant1 = double.Parse();
+                Sub1 = Sub1 + (pre1 + cant1);
 
-            Sub1 = Sub1 + (pre1 + cant1);
+                Console.Write("¿Desea agregar otro producto?: ");
+                menu = char.Parse(linea);
 
-            Console.Write("¿Desea agregar otro producto?: ");
-            n = string.Parse(linea);
-            s = string.Parse(linea);
-
-            false;
+            }
                 Console.Write("El total de la compra es: +sub1");
 
             Console.ReadKey();
